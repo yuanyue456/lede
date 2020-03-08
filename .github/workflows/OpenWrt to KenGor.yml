@@ -55,12 +55,6 @@ jobs:
 
           df -h
 
-      - name: 同步最新的源碼
-        run: |
-          git remote add openwrt https://github.com/coolsnowwolf/lede.git
-          git pull openwrt master
-          git remote -v
-
       - name: 自定義插件
         run: |
           cd package
